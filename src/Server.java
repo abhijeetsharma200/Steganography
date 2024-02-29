@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-//server
 public class Server {
     public static void main(String[] args) throws IOException {
         JFrame jframe = new JFrame("Server");
