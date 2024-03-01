@@ -24,6 +24,8 @@ public class Encoder {
 
             BufferedImage modified_cat = new BufferedImage(catWidth, catHeight, BufferedImage.TYPE_3BYTE_BGR);
             System.out.println(modified_cat.getType());
+            System.out.println(dogWidth);
+            System.out.println(dogHeight);
 
             for(int y = 0; y < dogHeight; y++){
                 for(int x = 0; x < dogWidth; x++){
@@ -48,7 +50,8 @@ public class Encoder {
 
             ImageIO.write(cat, "png", new File("steganographic_cat.png"));
 
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
     }
